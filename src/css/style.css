@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title__h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.title__h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #666;
+}
+
+.tasks-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.tasks-list__task {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    word-wrap: break-all;
+}
+
+.tasks-list__title-task {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tasks-list__btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.tasks-list__btn_red {
+    background-color: #af4c4c;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card__header {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form__task-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form__btn {
+    max-width: 250px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 600px) {
+    .tasks-list__task,
+    .card {
+        padding: 10px;
+    }
+
+    .form__task-input,
+    .form__btn {
+        padding: 10px;
+    }
+}
+
+.tasks-list__title-task_done {
+    text-decoration: line-through;
+    color: #adadad;
+}
+.none {
+    display: none !important;
+}
